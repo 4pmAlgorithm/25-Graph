@@ -15,7 +15,11 @@
 
 
 //vertex: a node
+
 //edge: connection between nodes
+
 //weighted/unweighted: values assigned to distances (edge/connection)
+
 //directied/undirected: directions assigned to distanced between vertices (ex: instagram:who follows who)
+
 
