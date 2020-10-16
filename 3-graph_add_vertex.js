@@ -1,9 +1,10 @@
 class Graph{
     constructor(){
-        this.adjacencyList = {};
+        this.adjacencyList = {}; //create an empty adjacency list obj 
     }
     addVertex(vertex){
-        if(!this.adjacencyList[vertex]) this.adjacencyList[vertex] = [];
+        if(!this.adjacencyList[vertex]) { //if this vertex didn't exist
+            this.adjacencyList[vertex] = []; //then create the vertex with an empty arr
     }
 }
 
