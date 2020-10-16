@@ -18,11 +18,11 @@ class Graph{
         );
     }
     removeVertex(vertex){
-        while(this.adjacencyList[vertex].length){
-            const adjacentVertex = this.adjacencyList[vertex].pop();
-            this.removeEdge(vertex, adjacentVertex);
+        while(this.adjacencyList[vertex].length){ //iterating
+            const adjacentVertex = this.adjacencyList[vertex].pop(); //remove all the ele of arr of obj val
+            this.removeEdge(vertex, adjacentVertex); //removing the edge //removing both vertex, and adjacentVertex
         }
-        delete this.adjacencyList[vertex]
+        delete this.adjacencyList[vertex] //remove the vertex (the key)
     }
 }
 
@@ -38,9 +38,9 @@ g.addEdge("Hong Kong", "Tokyo");
 g.addEdge("Hong Kong", "Dallas");
 g.addEdge("Los Angeles", "Hong Kong");
 g.addEdge("Los Angeles", "Aspen");
+console.log(g)
+g.removeVertex("Hong Kong")
 
-
-
-
+console.log(g)
 
 
